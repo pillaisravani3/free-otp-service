@@ -34,21 +34,31 @@ After adding the device you will get a token which will be used to send any kind
 
 Sample curl request to send an otp 
 
+**For OTP**
+
 ```shell
   curl --location 'https://dbuddyz.com/send/' \
   --form 'token="[TOKEN]"' \
   --form 'otp="[OTP]"' \
+  --form 'tonumber="+9190XXXXXXXX"'
+```
+
+**For Campaign**
+
+```shell
+  curl --location 'https://dbuddyz.com/send/' \
+  --form 'token="[TOKEN]"' \
   --form 'body="My Campaign Message"' \
-  --form 'fullmessage="[IS_FULL_MESSAGE_OR_OTP]"' \
+  --form 'fullmessage="1"' \
   --form 'tonumber="+9190XXXXXXXX"'
 ```
 
 | Variable                                      | Description                                                                                                                                                           |
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [TOKEN] | Token displayed on your Dashboard under My Token  |
-| [OTP]                          | The OTP to be sent using default Template
-| [IS_FULL_MESSAGE_OR_OTP] | If set to **1** it will send the body messaage as it is , else if set to **0** it will send otp message by replacing the [OTPNUMBER] string on [dbuddyz.com/profile](https://dbuddyz.com/profile/) with the [OTP] value in the curl request.
+| [OTP]                          | The OTP to be sent using default Template by replacing [OTPNUMBER] string present at [dbuddyz.com/profile](https://dbuddyz.com/profile/) and prepending the App Name at [dbuddyz.com/profile](https://dbuddyz.com/profile/) page , if present.
 
+**P.S - To send campaign messages you need to connect a watsapp number from your end which will be used to send the messages**
 
 ## Features
 
