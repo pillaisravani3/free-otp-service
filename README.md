@@ -1,3 +1,4 @@
+
 # free-otp-service
 # free-watsapp-campaign
 
@@ -10,6 +11,7 @@ Free campaign for watsapp aims to provide you a lifetime free service to send pr
 - [Free OTP](#free-otp)
 - [Add Device](#add-device)
 - [Token](#token)
+- [Refresh Token](#refresh-token)
 - [Sample Code](#sample-code)
 
 
@@ -29,6 +31,20 @@ To use Bulk Messaging , Customised Message , Translated Message etc.. you need t
 ### Token 
 
 After adding the device you will get a token which will be used to send any kind of messages , one time password , bulk messages , ads , campaigns etc..
+
+### Refresh Token 
+
+There are following cases with respect to tokens
+*  You are using default number to deliver the OTP
+	* Here its probably not possible that token would be expired as the master number will be delivering the code , still if it does , then you can send an email to info@dbuddyz.com  
+* You have added your number to make use of custom message and campaign
+	* Unlink the device on your phone watsapp 
+	* Go to https://dbuddyz.com/profile/  
+	* Click - Unlinked in the App need to Reconnect
+	* Navigate to Dashboard and scan the qr code
+	* Even here you have the option to switch to default number by clicking - Use Default Number below the QR code
+
+** Please see any time when there is Token Update take care of the Apps you have used the token and update them **
 
 ### Sample Code
 
