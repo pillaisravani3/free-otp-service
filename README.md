@@ -18,7 +18,7 @@ Free campaign for watsapp aims to provide you a lifetime free service to send pr
 
 ### Signup
 
-Goto DBuddyZ.com and signup for an account using the number you want to send the message from , this could be your personal number or a dedicated number for OTP delivery , one time password will be received on your watsapp , enter it and signup or login.
+Goto dbuddyz.prismswift.com and signup for an account using the number you want to send the message from , this could be your personal number or a dedicated number for OTP delivery , one time password will be received on your watsapp , enter it and signup or login.
 
 ### Free OTP
 
@@ -36,7 +36,7 @@ After adding the device you will get a token which will be used to send any kind
 
 * You have added your number to make use of custom message and campaign
 	* If you have unlinked the device on your phone watsapp 
-	* Go to https://dbuddyz.com/profile/  
+	* Go to https://dbuddyz.prismswift.com/profile/  
 	* Click - Unlinked in the App need to Reconnect
 	* Navigate to Dashboard and scan the qr code
 	* Even here you have the option to switch to default number by clicking - Use Default Number below the QR code
@@ -50,7 +50,7 @@ Sample curl request to send an otp
 **For OTP**
 
 ```shell
-  curl --location 'https://dbuddyz.com/send/' \
+  curl --location 'https://dbuddyz.prismswift.com/send/' \
   --form 'token="[TOKEN]"' \
   --form 'otp="[OTP]"' \
   --form 'tonumber="+9190XXXXXXXX"'
@@ -59,7 +59,7 @@ Sample curl request to send an otp
 **For Campaign**
 
 ```shell
-  curl --location 'https://dbuddyz.com/send/' \
+  curl --location 'https://dbuddyz.prismswift.com/send/' \
   --form 'token="[TOKEN]"' \
   --form 'body="My Campaign Message"' \
   --form 'fullmessage="1"' \
@@ -69,7 +69,7 @@ Sample curl request to send an otp
 | Variable                                      | Description                                                                                                                                                           |
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [TOKEN] | Token displayed on your Dashboard under My Token  |
-| [OTP]                          | The OTP to be sent using default Template by replacing [OTPNUMBER] string present at [dbuddyz.com/profile](https://dbuddyz.com/profile/) and prepending the App Name at [dbuddyz.com/profile](https://dbuddyz.com/profile/) page , if present.
+| [OTP]                          | The OTP to be sent using default Template by replacing [OTPNUMBER] string present at [dbuddyz.prismswift.com/profile](https://dbuddyz.prismswift.com/profile/) and prepending the App Name at [dbuddyz.prismswift.com/profile](https://dbuddyz.prismswift.com/profile/) page , if present.
 
 **P.S - To send campaign messages you need to connect a watsapp number from your end which will be used to send the messages**
 
